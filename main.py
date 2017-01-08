@@ -1,6 +1,7 @@
-# Implementation of BREAKOUT
+# Implementation of BREAKOUT for CodeSkulptor webapp
 # http://www.codeskulptor.org/#user41_6ihwWziNcT_58.py 
 # Katie Amazing, June 2016
+# Holy global variables, Batman
 
 import simplegui
 import random
