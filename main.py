@@ -26,15 +26,17 @@ broken_count = 0
 lives = 3
 ball_radius = 6
 particles = []
-img_bbubble = simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/bbubble.png")
-img_bbrick = simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/waterbrick.png")
-img_cbrick = simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/waterbrick2.png")
-img_pbrick = simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/waterbrick3.png")
-img_bubble = simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/bubble15.png")
-img_gbg = simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/gradientbg.png")
-img_splash = simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/splashtext.png")
-img_win = simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/wintext.png")
-sfx_pop = simplegui.load_sound("https://raw.githubusercontent.com/katieamazing/breakout/master/pop.wav")
+def load_image(which):
+    return simplegui.load_image("https://raw.githubusercontent.com/katieamazing/breakout/master/"+which+".png")
+img_bbubble = load_image("bbubble")
+img_bbrick = load_image("waterbrick")
+img_cbrick = load_image("waterbrick2")
+img_pbrick = load_image("waterbrick3")
+img_bubble = load_image("bubble15")
+img_gbg = load_image("gradientbg")
+img_splash = load_image("splashtext")
+img_win = load_image("wintext")
+sfx_pop = load_image("pop")
 sfx_pop.set_volume(0.7)
 sfx_level = simplegui.load_sound("https://raw.githubusercontent.com/katieamazing/breakout/master/transition.wav")
 sfx_level.set_volume(0.7)
