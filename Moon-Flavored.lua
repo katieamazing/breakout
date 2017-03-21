@@ -1,3 +1,5 @@
+--Conversion of python breakout to lua for Love2D
+
 WIDTH = 600
 HEIGHT = 400
 PAD_WIDTH = 80
